@@ -1,15 +1,48 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.cdnfonts.com/css/modern-no-20');
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  --primary: #46A29F;
+  --secondary: #E3D9D9;
+  --black: #000000;
+  --66FCF1: #66FCF1;
+  --1A1A1C: #1A1A1C;
+  --4E4E50: #4E4E50;
+  --E3D9D9: #E3D9D9;
+}
+
+#root {
+  height: 100%;
+}
+
+body {
+  height: 100vh;
+  background-color: #222222;
+  font-family: 'Modern No. 20', sans-serif;
 }
 
 .nav-link {
-  color: aliceblue;
+  color: var(--secondary);
+  font-size: 16px;
+}
+
+.card-shadow {
+  box-shadow: 14px 4px 14px 0px #00000040;
+}
+
+.strokeme {
+  color: var(--1A1A1C);
+  /* background-color: white; */
+  text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
+}
+
+.custom-gradient-text {
+  background: linear-gradient(87.02deg, #66FCF1 3.39%, #70C7C0 36.81%, #46A29F 61.61%, #A7AAB1 98.79%);
+  -webkit-background-clip: text;
+  /* For Safari */
+  background-clip: text;
+  color: transparent;
+  /* Hide the text */
 }

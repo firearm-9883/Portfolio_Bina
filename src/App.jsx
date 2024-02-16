@@ -10,8 +10,8 @@ function App() {
   return (
     <>
       <BrowserRouter>
+        <Navbar />
         <Routes>
-          {/* Auth Routes */}
           <Route path="/" element={<Home />}></Route>
           <Route path="/about" element={<About />}></Route>
           <Route path="/project" element={<Project />}></Route>
