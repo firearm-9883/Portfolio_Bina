@@ -20,7 +20,15 @@
 body {
   height: 100vh;
   background-color: #222222;
-  font-family: 'Modern No. 20', sans-serif;
+}
+
+.font-modern {
+  font-family: 'Modern No. 20', sans-serif !important;
+
+}
+
+.font-roboto {
+  font-family: 'Roboto', sans-serif !important;
 }
 
 .nav-link {
@@ -45,4 +53,40 @@ body {
   background-clip: text;
   color: transparent;
   /* Hide the text */
+}
+
+
+/* ***************Slider*********** */
+.card {
+  border-radius: 10px;
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+  width: 280px;
+  height: 280px;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: white; */
+}
+
+button {
+  margin: 10px;
+  background-color: white;
+  border: transparent;
+  padding: 7px;
+  height: 50px;
+  width: 50px;
+  border-radius: 500px;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.wrapper {
+  display: flex;
+  margin: 20px;
 }
