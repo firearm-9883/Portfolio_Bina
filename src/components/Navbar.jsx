@@ -20,7 +20,9 @@ function Navbar() {
             <Link
               to="/"
               className={`nav-link rounded-3xl ${
-                pathname === "/" ? "border-2 border-[#66FCF1]" : ""
+                pathname === "/"
+                  ? "border-2 border-[#66FCF1]"
+                  : "border-2 border-[#00000000]"
               } px-7 py-2`}
             >
               Home
@@ -28,7 +30,9 @@ function Navbar() {
             <Link
               to="/about"
               className={`nav-link rounded-3xl ${
-                pathname === "/about" ? "border-2 border-[#66FCF1]" : ""
+                pathname === "/about"
+                  ? "border-2 border-[#66FCF1]"
+                  : "border-2 border-[#00000000]"
               } px-7 py-2`}
             >
               About
@@ -36,7 +40,9 @@ function Navbar() {
             <Link
               to="/project"
               className={`nav-link rounded-3xl ${
-                pathname === "/project" ? "border-2 border-[#66FCF1]" : ""
+                pathname === "/project"
+                  ? "border-2 border-[#66FCF1]"
+                  : "border-2 border-[#00000000]"
               } px-7 py-2`}
             >
               Project
@@ -44,7 +50,9 @@ function Navbar() {
             <Link
               to="/gallery"
               className={`nav-link rounded-3xl ${
-                pathname === "/gallery" ? "border-2 border-[#66FCF1]" : ""
+                pathname === "/gallery"
+                  ? "border-2 border-[#66FCF1]"
+                  : "border-2 border-[#00000000]"
               } px-7 py-2`}
             >
               Gallery
@@ -52,7 +60,9 @@ function Navbar() {
             <Link
               to="/contact"
               className={`nav-link rounded-3xl ${
-                pathname === "/contact" ? "border-2 border-[#66FCF1]" : ""
+                pathname === "/contact"
+                  ? "border-2 border-[#66FCF1]"
+                  : "border-2 border-[#00000000]"
               } px-7 py-2`}
             >
               Contact
