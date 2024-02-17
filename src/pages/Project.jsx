@@ -4,12 +4,13 @@ import { useEffect, useState } from "react";
 import { RiArrowLeftSFill } from "react-icons/ri";
 import { RiArrowRightSFill } from "react-icons/ri";
 import { projectData } from "../const/projectData";
+import { useNavigate } from "react-router";
 
 export default function Project() {
   const [[activeIndex, direction], setActiveIndex] = useState([0, 0]);
   const items = ["🍔", "🍕", "🌭", "🍗"];
   const [imageArray, setImageArray] = useState([]);
-
+  const navigate = useNavigate();
   useEffect(() => {
     const extractedImages = projectData.map((project) => project.imageUrl);
     setImageArray(extractedImages);
@@ -26,6 +27,9 @@ export default function Project() {
     setActiveIndex((prevIndex) => [prevIndex[0] + newDirection, newDirection]);
   };
 
+  const handleOpen = () => {
+    navigate("/project/2");
+  };
   return (
     <>
       <section className="project grid grid-cols-8 relative top-[-90px] bg-[#3D4849]">
@@ -75,7 +79,11 @@ export default function Project() {
                         exit="exit"
                         transition={{ duration: 1 }}
                       >
-                        <img src={item}></img>
+                        <img
+                          className="cursor-pointer"
+                          src={item}
+                          onClick={handleOpen}
+                        ></img>
                       </motion.div>
                     );
                   })}

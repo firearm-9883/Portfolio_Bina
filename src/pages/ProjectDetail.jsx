@@ -34,23 +34,19 @@ const ProjectDetail = () => {
       <section className="project-detail relative top-[100px] bg-[#1A1A1C] overflow-hidden h-auto">
         <div className="project-overview flex items-center justify-center relative">
           <div className="text-[#E3D9D9] font-roboto w-[75%]">
-            <h1 className="text-[30px] text-center font-semibold">
+            <h1 className="text-[30px] mt-10 mb-20 text-center font-semibold">
               PORJECT OVERVIEW
             </h1>
             <div className="grid grid-cols-1 gap-10 md:gap-20 md:grid-cols-2 mt-10">
               <div className="project-topic border-r md:border-gray-300 md:pr-10">
-                <h3 className="text-2xl font-[600]">Project Topic</h3>
+                <h3 className="text-2xl font-[600]">
+                  Healthcare Management System
+                </h3>
                 <p className="mt-3">
-                  Short description regarding what the project was about. Short
-                  description regarding what the project was about. Short
-                  description regarding what the project was about. Short
-                  description regarding what the project was about.Short
-                  description regarding what the project was about.Short
-                  description regarding what the project was about.Short
-                  description regarding what the project was about.Short
-                  description regarding what the project was about.Short
-                  description regarding what the project was about.Short
-                  description regarding what the project was about.
+                  Developing a comprehensive healthcare management system for
+                  hospitals or clinics, including features like patient
+                  registration, appointment scheduling, electronic health
+                  records (EHR), billing, and inventory management.
                 </p>
                 <div className="flex items-center mt-10 text-white font-semibold ps-10  flex-wrap justify-between rounded-3xl bg-[#3D4849]">
                   <h4 className="text-lg">Get the Source code </h4>
@@ -66,15 +62,16 @@ const ProjectDetail = () => {
                 <div className="project-role">
                   <h1 className="text-xl font-[600]">MY ROLE</h1>
                   <p className="mt-3">
-                    My role. My role. My role. My role. My role. My role. My
-                    role. My role. My role. My role.
+                    Create wireframes, prototypes, and mockups for different
+                    screens and components of the HMS. Design intuitive and
+                    user-friendly interfaces that prioritize usability,
+                    accessibility, and efficiency.
                   </p>
                 </div>
                 <div className="project-team">
                   <h1 className="text-xl font-[600]">TEAM</h1>
                   <p className="mt-3">
-                    Project team. Project team. Project team. Project team.
-                    Project team. Project team.
+                    Angel Rana. Bina Lawati. Bina Rana. Angel Lawati.
                   </p>
                 </div>
               </div>

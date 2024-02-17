@@ -23,6 +23,8 @@ body {
   background-color: #1A1A1C;
   overflow-y: auto;
   overflow-x: hidden;
+  margin: 0px;
+  padding: 0px;
 }
 
 /* Customize scrollbar */

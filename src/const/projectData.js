@@ -9,6 +9,9 @@ export const projectData = [
     description:
       "The definition of Project 1 business can also include tactics like affiliate marketing",
     imageUrl: "/images/projectImages/project1.png",
+    myRole: "",
+    team: "",
+    githubLink: "",
   },
   {
     id: "",
@@ -16,6 +19,9 @@ export const projectData = [
     description:
       "The definition of Project 1 business can also include tactics like affiliate marketing",
     imageUrl: "/images/projectImages/project2.png",
+    myRole: "",
+    team: "",
+    githubLink: "",
   },
   {
     id: "",
@@ -23,6 +29,9 @@ export const projectData = [
     description:
       "The definition of Project 1 business can also include tactics like affiliate marketing",
     imageUrl: "images/projectImages/project3.png",
+    myRole: "",
+    team: "",
+    githubLink: "",
   },
   {
     id: "",
@@ -30,5 +39,8 @@ export const projectData = [
     description:
       "The definition of Project 1 business can also include tactics like affiliate marketing",
     imageUrl: "/images/projectImages/project4.png",
+    myRole: "",
+    team: "",
+    githubLink: "",
   },
 ];
