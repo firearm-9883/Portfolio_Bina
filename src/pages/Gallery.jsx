@@ -1,26 +1,42 @@
-import React from "react";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from "react-responsive-carousel";
+import React, { useRef } from "react";
+import Slider from "react-slick";
 import { galleryData } from "../const/galleryData";
 
-class Gallery extends React.Component {
-  render() {
-    return (
-      <section className="gallery relative top-[90px]">
-        <div className="mx-10">
-          <Carousel transitionTime="1000" infiniteLoop>
-            {galleryData.map((item, index) => {
-              return (
-                <div key={index}>
-                  <img src={item.imgUrl} alt={`img ${item.id}`} />
-                  <p className="legend">{item.title}</p>
-                </div>
-              );
-            })}
-          </Carousel>
-        </div>
-      </section>
-    );
-  }
-}
+const Gallery = () => {
+  const settings = {
+    customPaging: function (i) {
+      return (
+        <a>
+          <img src={galleryData[i].imgUrl} />
+        </a>
+      );
+    },
+    dots: true,
+    fade: true,
+    dotsClass: "slick-dots slick-thumb",
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    speed: 500,
+    slidesToShow: 1,
+    pauseOnHover: true,
+    slidesToScroll: 1,
+    arrows: false,
+  };
+
+  return (
+    <section className="gallery relative top-[90px] flex items-center justify-center">
+      <div className="mx-10 mb-40 slider-container w-[60%]">
+        <Slider {...settings}>
+          {galleryData.map((item, index) => (
+            <div key={index} className="rounded-3xl">
+              <img src={item.imgUrl} alt={`img ${item.id}`} />
+            </div>
+          ))}
+        </Slider>
+      </div>
+    </section>
+  );
+};
+
 export default Gallery;

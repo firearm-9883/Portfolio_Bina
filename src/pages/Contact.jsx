@@ -1,5 +1,4 @@
 import React from "react";
-
 const Contact = () => {
   return (
     <>
@@ -16,12 +15,23 @@ const Contact = () => {
 
         <div className="col-span-3 h-[100vh]">
           <div className="flex flex-col  items-center justify-center h-[100%]">
-            <h1 className="text-[#CED0D0] text-[100px] leading-[120px] mt-24">GET IN <br />TOUCH</h1>
+            <h1 className="text-[#CED0D0] text-[100px] leading-[120px] mt-24">
+              GET IN <br />
+              TOUCH
+            </h1>
             <div className="flex flex-row gap-10 mt-20 text-[#CED0D0] underline text-[20px] font-[600]">
-              <a href="https://linkedin.com/" target="_blank" a>Linkedin</a>
-              <a href="https://linkedin.com/" target="_blank">Viber</a>
-              <a href="https://linkedin.com/" target="_blank">Whatapp</a>
-              <a href="https://linkedin.com/" target="_blank">Instagram</a>
+              <a href="https://linkedin.com/" target="_blank">
+                Linkedin
+              </a>
+              <a href="https://linkedin.com/" target="_blank">
+                Viber
+              </a>
+              <a href="https://linkedin.com/" target="_blank">
+                Whatapp
+              </a>
+              <a href="https://linkedin.com/" target="_blank">
+                Instagram
+              </a>
             </div>
           </div>
         </div>

@@ -1,7 +1,7 @@
 export const galleryData = [
   {
     id: "1",
-    imgUrl: "/images/galleryImages/img1.jpg",
+    imgUrl: "/images/galleryImages/img1.png",
     title: "Title",
   },
   {
