@@ -36,7 +36,7 @@ const ProjectDetail = () => {
   };
   return (
     <>
-      <section className="project-detail relative top-[100px] bg-[#1A1A1C] overflow-hidden h-auto">
+      <section className="project-detail relative top-[100px] bg-[#1A1A1C]  h-auto">
         <div className="project-overview flex items-center justify-center relative">
           <div className="text-[#E3D9D9] font-roboto w-[75%]">
             <h1 className="text-[30px] mt-10 mb-20 text-center font-semibold">
@@ -57,7 +57,7 @@ const ProjectDetail = () => {
                   <h4 className="text-lg">Get the Source code </h4>
                   <div className="flex items-center">
                     <h5 className="mr-4 text-lg">Github</h5>
-                    <Link className="px-6 py-4 bg-white rounded-3xl cursor-pointer ">
+                    <Link className="px-6 py-4 bg-white rounded-3xl cursor-pointer hover:bg-slate-200">
                       <CgAttachment className="text-black text-2xl " />
                     </Link>
                   </div>

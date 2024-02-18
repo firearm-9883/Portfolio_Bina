@@ -17,7 +17,7 @@ const Contact = () => {
           <div className="flex flex-col  items-center justify-center h-[100%]">
             <h1 className="text-[#CED0D0] text-[100px] leading-[120px] mt-24">
               GET IN <br />
-              TOUCH
+              TO<span>U</span>CH
             </h1>
             <div className="flex flex-row gap-10 mt-20 text-[#CED0D0] underline text-[20px] font-[600]">
               <a href="https://linkedin.com/" target="_blank">
