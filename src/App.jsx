@@ -5,8 +5,10 @@ import Project from "./pages/Project";
 import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
 import Navbar from "./components/Navbar";
-import Test from "./container/Test";
+import Test from "./container/Spinner";
 import ProjectDetail from "./pages/ProjectDetail";
+import Coffee from "./container/Coffee";
+import ProjectCard from "./container/ProjectCard";
 
 function App() {
   return (
@@ -15,7 +17,8 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />}></Route>
-          <Route path="/test" element={<Test />}></Route>
+          <Route path="/buy-me-a-coffee" element={<Coffee />}></Route>
+          <Route path="/more-project" element={<ProjectCard />}></Route>
           <Route path="/about" element={<About />}></Route>
           <Route path="/project" element={<Project />}></Route>
           <Route path="/project/:id" element={<ProjectDetail />}></Route>

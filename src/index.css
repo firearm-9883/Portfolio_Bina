@@ -27,6 +27,7 @@ body {
   padding: 0px;
 }
 
+
 /* Customize scrollbar */
 body::-webkit-scrollbar {
   width: 12px;
@@ -57,6 +58,10 @@ body::-webkit-scrollbar-thumb:hover {
 
 .font-inter {
   font-family: 'Inter', sans-serif !important;
+}
+
+.font-palatino {
+  font-family: 'Palatino', sans-serif;
 }
 
 .nav-link {
@@ -164,4 +169,25 @@ button {
 .wrapper {
   display: flex;
   margin: 20px;
+}
+
+
+
+/* ************Animation************* */
+.slide-in-animation {
+  animation: slideIn 3.5s ease forwards;
+  opacity: 0;
+  /* Ensure the image starts hidden */
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }

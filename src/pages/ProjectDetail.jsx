@@ -5,15 +5,20 @@ import Slider from "react-slick";
 import { FaRegArrowAltCircleRight } from "react-icons/fa";
 import { FaRegArrowAltCircleLeft } from "react-icons/fa";
 import { projectData } from "../const/projectData";
+import ProjectCard from "../container/ProjectCard";
+import glimpse1 from "/images/projectGlimpse/glimpse1.svg";
+import glimpse2 from "/images/projectGlimpse/glimpse2.svg";
+import glimpse3 from "/images/projectGlimpse/glimpse3.svg";
 
 const ProjectDetail = () => {
-  const [imageUrls, setImageUrls] = useState([]);
+  const [imageUrls, setImageUrls] = useState([glimpse1, glimpse2, glimpse3]);
+
   let sliderRef = useRef(null);
 
-  useState(() => {
-    const urls = projectData.map((item) => item.imageUrl);
-    setImageUrls(urls);
-  }, []);
+  // useState(() => {
+  //   const urls = projectData.map((item) => item.imageUrl);
+  //   setImageUrls(urls);
+  // }, []);
 
   const next = () => {
     sliderRef.slickNext();
@@ -38,7 +43,7 @@ const ProjectDetail = () => {
               PORJECT OVERVIEW
             </h1>
             <div className="grid grid-cols-1 gap-10 md:gap-20 md:grid-cols-2 mt-10">
-              <div className="project-topic border-r md:border-gray-300 md:pr-10">
+              <div className="project-topic md:border-r md:border-gray-300 md:pr-10">
                 <h3 className="text-2xl font-[600]">
                   Healthcare Management System
                 </h3>
@@ -108,10 +113,11 @@ const ProjectDetail = () => {
           </div>
         </div>
         <div className="more-project flex items-center justify-center relative mt-20">
-          <div className="text-[#E3D9D9] font-roboto w-[75%]">
-            <h1 className="text-[30px] my-20 text-center font-semibold">
+          <div className="text-[#E3D9D9] font-roboto ">
+            <h1 className="text-[30px] mt-20 text-center font-semibold">
               More Project
             </h1>
+            <ProjectCard />
           </div>
         </div>
       </section>

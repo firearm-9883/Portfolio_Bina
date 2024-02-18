@@ -1,6 +1,21 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const Home = () => {
+  const [typing, setTyping] = useState(false);
+
+  useEffect(() => {
+    // Start the typing animation after component mounts
+    setTyping(true);
+
+    // Optionally, you can stop the animation after a certain duration
+    const timer = setTimeout(() => {
+      setTyping(false);
+    }, 3000); // Adjust the duration as needed
+
+    // Clean up the timer when the component unmounts
+    return () => clearTimeout(timer);
+  }, []);
   return (
     <>
       {/* <Navbar /> */}
@@ -12,10 +27,12 @@ const Home = () => {
             </h1>
             <div className="absolute top-[85%] transform -translate-y-1/2 right-[-64px] cursor-pointer mr-5">
               {/* Adjust right and margin values according to your design */}
-              <div className="bg-[#1A1A1C] rounded-[50%] p-5">
-                {/* <IoArrowForwardCircleOutline className="text-white text-[60px] font-normal" /> */}
-                <img src="/images/arrow.svg"></img>
-              </div>
+              <Link to="/about">
+                <div className="bg-[#1A1A1C] rounded-[50%] p-5">
+                  {/* <IoArrowForwardCircleOutline className="text-white text-[60px] font-normal" /> */}
+                  <img src="/images/arrow.svg"></img>
+                </div>
+              </Link>
             </div>
           </div>
         </div>

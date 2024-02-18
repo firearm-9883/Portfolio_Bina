@@ -1,8 +1,8 @@
 import React from "react";
-import "./test.css";
+import "./spinner.css";
 import { FaDotCircle } from "react-icons/fa";
 
-const Test = () => {
+const Spinner = () => {
   return (
     // <div id="container">
     <div id="circle" className="font-roboto">
@@ -41,4 +41,4 @@ const Test = () => {
   );
 };
 
-export default Test;
+export default Spinner;
